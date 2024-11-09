@@ -1,0 +1,116 @@
+/* src/components/header.css */
+
+header {
+    background-image: url('../assets/img/lagoGeneralCarreraChelenko.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.cont-principal {
+    background-color: rgba(245, 245, 245, 0.9);
+    min-height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cont-nav {
+    margin: 0 30px !important;
+}
+
+.cont-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.cont-links {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+
+/* Logo como imagen de fondo */
+.navbar-brand {
+    background-image: url('../assets/img/logo-Black.webp');
+    /* Asegúrate de que la ruta sea correcta */
+    background-size: contain;
+    /* Ajusta la imagen al contenedor */
+    background-repeat: no-repeat;
+    /* Evita que se repita la imagen */
+    width: 150px;
+    /* Ancho del contenedor */
+    height: 50px;
+    /* Ajusta la altura según sea necesario */
+    display: inline-block;
+    /* Permite que se comporte como un bloque para la imagen de fondo */
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+.collapsed:hover {
+    border-color: rgb(32, 201, 151);
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+.efecto {
+    padding: 5px 10px !important;
+}
+
+.efecto:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    color: green !important;
+    font-weight: 500;
+}
+
+.nav-icon {
+    font-size: 24px;
+    /* Tamaño del icono del perfil */
+    /* Espaciado entre iconos */
+    color: rgba(0, 0, 0, 0.9);
+    /* Color del icono */
+}
+
+.btn-cart {
+    background: none;
+    /* Sin fondo */
+    border: none;
+    /* Sin borde */
+    cursor: pointer;
+    /* Cambiar cursor al pasar por encima */
+    font-size: 24px;
+    /* Tamaño del icono del carrito */
+    color: rgba(0, 0, 0, 0.9);
+    /* Color del icono */
+}
+
+/* Hover effect for icons */
+.nav-icon:hover,
+.btn-cart:hover {
+    color: rgb(0, 160, 0);
+    /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para el icono del carrito cuando tiene artículos */
+.nav-icon.has-items {
+    position: relative;
+}
+
+.nav-icon.has-items::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid white;
+}

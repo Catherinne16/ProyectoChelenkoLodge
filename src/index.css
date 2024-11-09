@@ -1,0 +1,125 @@
+/* Estilos generales para asegurar una buena presentación en todos los tamaños de pantalla */
+#app {
+  width: 100%; /* El contenedor principal ocupa todo el ancho disponible */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+.contenedorPadre{
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  /* Configuración de tipografía y colores globales */
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Define esquema de color para soportar modos claro y oscuro */
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87); /* Color de texto predeterminado */
+  background-color: #242424; /* Fondo oscuro predeterminado */
+
+  /* Optimización de fuentes y renderizado */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos para enlaces */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+/* Configuración básica para el cuerpo de la página */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px; /* Evita que el diseño se rompa en pantallas más pequeñas */
+  min-height: 100vh; /* Asegura que el contenido ocupe toda la altura de la ventana */
+}
+
+/* Estilos de título principal */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Estilos generales para botones */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff; /* Cambio de borde al pasar el ratón */
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Asegura accesibilidad en enfoque */
+}
+
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547; /* Color de texto para modo claro */
+    background-color: #ffffff; /* Fondo para modo claro */
+  }
+  
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Centrado del contenido en la página principal */
+.home-container {
+  height: auto; /* Ocupa todo el alto de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto */
+  color: white; /* Color de texto legible en fondo oscuro */
+}
+
+/* Estilos responsivos para dispositivos medianos */
+@media (max-width: 768px) { 
+  h1 {
+    font-size: 2em; /* Reduce el tamaño del título para pantallas medianas */
+  }
+  
+  button {
+    padding: 0.5em 1em; /* Ajusta el relleno del botón */
+  }
+}
+
+/* Estilos responsivos para dispositivos pequeños */
+@media (max-width: 480px) { 
+  h1 {
+    font-size: 1.8em; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+  
+  button {
+    padding: 0.4em 0.8em; /* Ajusta el tamaño del botón */
+    font-size: 0.9em; /* Reduce ligeramente el tamaño de fuente del botón */
+  }
+}

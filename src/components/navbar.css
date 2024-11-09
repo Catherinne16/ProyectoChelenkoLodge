@@ -1,0 +1,58 @@
+/* src/components/header.css */
+.container-navbar {
+    width: 100%;
+    height: auto;
+    background-color: rgba(119, 136, 153, 0.5);
+    padding: 20px;
+    border-top: 3px solid lightsteelblue;
+    border-bottom: 4px solid lightsteelblue;
+    
+}
+
+
+.cont{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    width: 100%;
+    
+}
+
+.formulario {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 0px solid #000000;
+    border-radius: 5px;
+    margin: 0; /* Eliminar margen lateral */
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+form{
+    width: 100%;
+}
+
+.buscar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+label{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    
+}
+
+input:hover, select:hover{
+    border-color: #20c997;
+}
+
+

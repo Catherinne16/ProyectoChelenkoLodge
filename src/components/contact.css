@@ -1,0 +1,118 @@
+/* Estilo general del contenedor de contacto */
+.fondo-contact{
+    background-image: url('https://www.chelenko.com/wp-content/uploads/2020/11/255092450-1024x720.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 700px;
+    width: 90%; /* Ancho adaptable */
+    margin: 10px auto;
+    padding: 20px; /* Más espacio alrededor */
+    background-color: rgba(245, 245, 245, 0.8); /* Color de fondo claro y suave */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo del cuerpo del contacto */
+.contact-body {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco para el cuerpo */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo de títulos */
+h1 {
+    text-align: center;
+    color: #333333; /* Color oscuro para el título */
+    font-family: 'Arial', sans-serif; /* Tipografía simple */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+.subtitle {
+    text-align: center;
+    color: #666; /* Color más suave para subtítulos */
+    margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegurarse de que el formulario ocupe el ancho total */
+}
+
+/* Espaciado entre los campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000; /* Color oscuro */
+}
+
+/* Estilo de los inputs y textarea */
+input,
+textarea {
+    width: 100%;
+    padding: 12px; /* Padding aumentado para comodidad */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente claro */
+    transition: border-color 0.3s; /* Transición para el enfoque */
+    background-color: #b2b3b2;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #20c997; /* Color de borde en enfoque */
+    outline: none; /* Sin contorno predeterminado */
+}
+
+/* Estilo del botón */
+.submit-btn {
+    background-color: #20c997; /* Color verde suave */
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submit-btn:hover {
+    background-color:#20c997; /* Color más oscuro al pasar el ratón */
+}
+
+/* Estilo para el contenedor del botón */
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px; /* Espacio superior */
+    
+}
+
+.contact-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}

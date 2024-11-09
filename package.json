@@ -1,0 +1,64 @@
+{
+  "name": "chelenko-lodge-ota",
+  "description": "Sitio web operado como Online Travel Agency.",
+  "private": true,
+  "version": "1.7.0",
+  "authors": [
+    "Matias H Torres",
+    "Jennifer Diaz",
+    "Hanael Echeverria",
+    "Byron Espinoza",
+    "Alexis Fernandez"
+  ],
+  "homepage": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matihtgens/ChelenkoLodge-OTA"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "bootstrap",
+    "express",
+    "mongo",
+    "node",
+    "fullstack",
+    "responsive",
+    "webapp",
+    "api"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "morgan": "^1.10.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "react-toastify": "^10.0.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "vite": "^5.4.8"
+  }
+}

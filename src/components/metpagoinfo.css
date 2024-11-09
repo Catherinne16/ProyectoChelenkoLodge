@@ -1,0 +1,69 @@
+.payment-background {
+    background-image: url('../assets/img/metpagoinfofoto.webp'); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-payment{
+    max-width: 700px;
+    width: 100%; /* Ancho adaptable */
+    margin: 10px auto;
+    padding: 15px; /* Más espacio alrededor */
+    background-color: rgba(245, 245, 245, 0.7); /* Color de fondo claro y suave */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.foto-trans {
+    max-width: 80%; 
+    height: auto;
+    margin: 30px 0;
+    filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.payment-methods {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(249, 249, 249, 0.8); /* Fondo semitransparente para el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.methods-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    justify-content: center; 
+}
+
+.method-item {
+    flex: 1 1 calc(50% - 15px); 
+    max-width: 300px; 
+    border: 1px solid #414040;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white; /* Fondo sólido para cada tarjeta */
+    transition: background-color 0.3s;
+}
+
+.method-item:hover {
+    background-color: #ddecf7;
+}
+
+.method-icon {
+    font-size: 2rem;
+    display: block;
+}
+
+.payment-methods h1 {
+    color: #000000; /* Cambia este color al que desees */
+    font-size: 2.5rem; /* Ajusta el tamaño si lo necesitas */
+}

@@ -1,0 +1,110 @@
+/* Estilos generales del contenedor principal */
+.container-info-pago {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a la izquierda y derecha */
+  gap: 20px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo para la tarjeta que contiene la información */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Ajusta el tamaño para que ambos ocupen casi el 50% */
+  display: flex;
+  flex-direction: column; /* Asegura que el contenido dentro de cada tarjeta esté alineado verticalmente */
+}
+
+/* Estilo para la cabecera de la tarjeta */
+.card-header {
+  background-color: #20c997;
+  color: white;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Título dentro de la cabecera */
+.card-title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body {
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Estilo para los encabezados de secciones */
+.fw-bold {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Espaciado entre las secciones */
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* Estilo para los textos pequeños */
+.small {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+/* Estilo para las filas de fechas */
+.row {
+  margin-bottom: 1rem;
+}
+
+.col-sm-6 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  /* En pantallas pequeñas, los elementos ocupan el 100% de ancho */
+  .container-info-pago {
+    flex-direction: column;
+    align-items: center; /* Alinea los elementos al centro en pantallas pequeñas */
+  }
+
+  .card {
+    width: 90%; /* Los elementos ocupan el 90% del ancho en pantallas pequeñas */
+    margin-bottom: 20px;
+  }
+}
+
+/* Línea divisoria entre la información y los detalles de pago */
+.border-top {
+  border-top: 2px solid #ddd;
+}
+
+/* Espaciado de la parte superior después de la línea divisoria */
+.pt-3 {
+  padding-top: 1rem;
+}
+
+/* Estilo para los detalles de pago */
+.d-flex {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos de pago a la izquierda y derecha */
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo condicional para los textos en negrita en los detalles de pago */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Espaciado en general */
+.my-4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

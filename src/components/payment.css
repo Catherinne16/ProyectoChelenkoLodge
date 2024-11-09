@@ -1,0 +1,24 @@
+.cont-paymentInfo{
+    background-image: url('https://www.chelenko.com/wp-content/uploads/2020/11/123246611_687930785485380_241262775937881169_n-1024x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+    padding: 40px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-info-reserva{
+    background-color: rgba(176, 196, 222, 0.8); 
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%; /* Ancho adaptable */
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

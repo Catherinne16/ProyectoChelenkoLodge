@@ -1,0 +1,63 @@
+/* Estilos generales */
+.container {
+    padding: 0 20px; /* Valor por defecto para pantallas grandes */
+}
+
+.card {
+    width: auto; /* Valor por defecto para pantallas grandes */
+    font-size: 1rem; /* Valor por defecto para pantallas grandes */
+}
+
+/* XS: Pantallas pequeñas */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    .card {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+/* S: Pantallas medianas (sm) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    .card {
+        max-width: 90%;
+    }
+}
+
+/* M: Pantallas medianas (md) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        padding: 0 20px;
+    }
+    .card {
+        max-width: 80%;
+        font-size: 1rem;
+    }
+}
+
+/* L: Pantallas grandes (lg) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    .card {
+        max-width: 70%;
+        font-size: 1.1rem;
+    }
+}
+
+/* XL: Pantallas extra grandes (xl) */
+@media (min-width: 1201px) {
+    .container {
+        padding: 0 40px;
+    }
+    .card {
+        max-width: 60%;
+        font-size: 1.2rem;
+    }
+}

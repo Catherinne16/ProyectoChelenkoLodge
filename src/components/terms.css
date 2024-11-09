@@ -1,0 +1,79 @@
+.fondo-terminos {
+    background-image: url('https://www.chelenko.com/wp-content/uploads/2020/11/124342389_371931374122029_1026373609019741684_n-1024x1024.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-info-terminos {
+    max-width: 800px;
+    width: 90%; /* Ancho adaptable */
+    margin: 10px auto;
+    padding: 20px; /* Más espacio alrededor */
+    background-color: rgba(245, 245, 245, 0.8); /* Color de fondo claro y suave */
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cont-terminos{
+    width: 100%;
+    padding: 20px !important;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    padding: 10px;
+    /* Eliminada la alineación centrada */
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.form-check-label {
+    font-size: 12px;
+    font-weight: bold; 
+    text-decoration: underline;
+}
+
+.inputPago {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-completar {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-completar:hover {
+    background-color: #333;
+}
+
+.custom-label {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilo para la lista de términos */
+.terminos-texto {
+    list-style-type: disc; /* Tipo de punto */
+    padding: 5px;
+    margin: 0; /* Elimina margen por defecto */
+    text-align: left;
+}
+
+.terminos-texto li {
+    margin-bottom: 10px; /* Espacio entre elementos */
+}

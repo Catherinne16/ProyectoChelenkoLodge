@@ -1,0 +1,18 @@
+/* Estilos para alinear Total y MetodoPago al lado */
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre los dos componentes */
+    align-items: flex-start;
+  }
+  
+  .total-info {
+    flex: 1;  /* Permite que el contenedor de Total ocupe un porcentaje del espacio */
+    max-width: 500px; /* Limitar el tamaño */
+  }
+  
+  .metodo-pago-container {
+    flex: 1;  /* Permite que el contenedor de MetodoPago ocupe el resto del espacio */
+    max-width: 500px; /* Limitar el tamaño máximo */
+  }
+  

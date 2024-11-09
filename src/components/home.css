@@ -1,0 +1,65 @@
+/* Fondo */
+.fondo {
+  background-image: url('../assets/img/chelenko.webp');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor principal de la página de inicio */
+.home-container {
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que el contenido se ajuste en filas en pantallas pequeñas */
+  justify-content: space-between; /* Asegura que los componentes se distribuyan de forma equitativa */
+  gap: 20px; /* Espacio entre los elementos */
+  align-items: flex-start; /* Alinea los elementos en la parte superior */
+  text-align: center;
+  color: white;
+}
+
+/* Contenedor para las tarjetas de cabañas */
+.card-container {
+  flex: 1; /* Toma el 50% del ancho en pantallas grandes */
+  min-width: 300px; /* Asegura que el contenedor de las tarjetas no se haga demasiado pequeño */
+}
+
+/* Contenedor para los componentes de reserva y pago */
+.home-reserva {
+  display: flex;
+  gap: 20px;  /* Espacio entre DetalleReserva y MetodoPago */
+  flex: 1; /* Toma el 50% del ancho en pantallas grandes */
+  min-width: 300px; /* Asegura que el contenedor tenga un tamaño mínimo */
+}
+
+/* Estilos específicos para DetalleReserva */
+.detalle-reserva {
+  flex: 1;  /* Toma el mismo espacio que MetodoPago */
+}
+
+/* Estilos específicos para MetodoPago */
+.metodo-pago {
+  flex: 1;  /* Toma el mismo espacio que DetalleReserva */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Los elementos se apilan en pantallas pequeñas */
+  }
+
+  .home-reserva {
+    flex-direction: column; /* Los componentes de reserva y pago se apilan también */
+  }
+
+  .card-container, .home-reserva {
+    min-width: 100%;  /* Los contenedores ocupan todo el ancho disponible */
+  }
+}
